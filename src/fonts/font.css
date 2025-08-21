@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Assistant';
+  src: url('./Assistant-VariableFont_wght.ttf') format('truetype');
+  font-weight:800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AssistantR';
+  src: url('./Assistant-VariableFont_wght.ttf') format('truetype');
+  font-weight:300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./opensanshebrew-bold-webfont.ttf') format('truetype');
+  font-weight:bold;
+
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansR';
+  src: url('./opensanshebrew-light-webfont.ttf') format('truetype');
+  font-weight:300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HeeboR';
+  src: url('./Heebo-VariableFont_wght.ttf') format('truetype');
+  font-weight:300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Berto';
+  src: url('./Forum-Regular.ttf') format('truetype');
+ 
+  font-style: normal;
+}

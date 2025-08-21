@@ -1,0 +1,222 @@
+/* Base styles */
+.title {
+  color: #000000;
+  direction: rtl;
+  font-family: "Assistant";
+  font-size: 2.5rem;
+  margin: 2% auto;
+  width:90%;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  color: #000000;
+  direction: rtl;
+  font-family: "AssistantR";
+  font-size: 1.4rem;
+  margin: 2% auto;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  direction: rtl;
+  margin: 2% auto;
+}
+
+/* Responsive breakpoints */
+
+/* מתחת ל-350px */
+@media (max-width: 349px) {
+  .title {
+    font-size: 1.5rem;
+    margin: 3% auto;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    margin: 3% auto;
+  }
+  
+  .row {
+    flex-direction: column;
+    margin: 3% auto;
+  }
+}
+
+/* 350-450px */
+@media (min-width: 350px) and (max-width: 450px) {
+  .title {
+    font-size: 1.7rem;
+    width:80%;
+    margin: 2.5% auto;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    margin: 2.5% auto;
+  }
+  
+  .row {
+    flex-direction: column;
+    margin: 2.5% auto;
+  }
+}
+
+/* 450-550px */
+@media (min-width: 450px) and (max-width: 550px) {
+  .title {
+    font-size: 1.9rem;
+    margin: 2.3% auto;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    margin: 2.3% auto;
+  }
+  
+  .row {
+    margin: 2.3% auto;
+  }
+}
+
+/* 550-650px */
+@media (min-width: 550px) and (max-width: 650px) {
+  .title {
+    font-size: 2.1rem;
+    margin: 2.2% auto;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin: 2.2% auto;
+  }
+  
+  .row {
+    margin: 2.2% auto;
+  }
+}
+
+/* 650-750px */
+@media (min-width: 650px) and (max-width: 750px) {
+  .title {
+    font-size: 2.3rem;
+    margin: 2.1% auto;
+  }
+  
+  .description {
+    font-size: 1.3rem;
+    margin: 2.1% auto;
+  }
+  
+  .row {
+    margin: 2.1% auto;
+  }
+}
+
+/* 750-850px */
+@media (min-width: 750px) and (max-width: 850px) {
+  .title {
+    font-size: 2.4rem;
+    margin: 2% auto;
+  }
+  
+  .description {
+    font-size: 1.35rem;
+    margin: 2% auto;
+  }
+  
+  .row {
+    margin: 2% auto;
+  }
+}
+
+/* 850-950px */
+@media (min-width: 850px) and (max-width: 950px) {
+  .title {
+    font-size: 2.5rem;
+    margin: 2% auto;
+  }
+  
+  .description {
+    font-size: 1.4rem;
+    margin: 2% auto;
+  }
+  
+  .row {
+    margin: 2% auto;
+  }
+}
+
+/* 950-1050px */
+@media (min-width: 950px) and (max-width: 1050px) {
+  .title {
+    font-size: 2.6rem;
+    margin: 1.9% auto;
+  }
+  
+  .description {
+    font-size: 1.45rem;
+    margin: 1.9% auto;
+  }
+  
+  .row {
+    margin: 1.9% auto;
+  }
+}
+
+/* 1050-1150px */
+@media (min-width: 1050px) and (max-width: 1150px) {
+  .title {
+    font-size: 2.7rem;
+    margin: 1.8% auto;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    margin: 1.8% auto;
+  }
+  
+  .row {
+    margin: 1.8% auto;
+  }
+}
+
+/* 1150-1250px */
+@media (min-width: 1150px) and (max-width: 1250px) {
+  .title {
+    font-size: 2.8rem;
+    margin: 1.7% auto;
+  }
+  
+  .description {
+    font-size: 1.6rem;
+    margin: 1.7% auto;
+  }
+  
+  .row {
+    margin: 1.7% auto;
+  }
+}
+
+/* מעל 1250px */
+@media (min-width: 1250px) {
+  .title {
+    font-size: 3rem;
+    margin: 1.5% auto;
+  }
+  
+  .description {
+    font-size: 1.7rem;
+    margin: 1.5% auto;
+  }
+  
+  .row {
+    margin: 1.5% auto;
+  }
+}

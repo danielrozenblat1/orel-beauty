@@ -1,0 +1,157 @@
+.container {
+  width: 380px; /* הורחב מ-320px */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 2% auto;
+  
+  /* Enhanced Liquid Glass Morphism with New Pink Gradient */
+  background: linear-gradient(135deg, 
+    rgba(255, 210, 250, 0.12) 0%,      /* #FFD2FA */
+    rgba(255, 240, 253, 0.08) 12.5%,   /* #FFF0FD */
+    rgba(255, 205, 245, 0.15) 25%,     /* #FFCDF5 */
+    rgba(255, 228, 251, 0.12) 37.5%,   /* #FFE4FB */
+    rgba(255, 174, 240, 0.10) 50%,     /* #FFAEF0 */
+    rgba(255, 220, 248, 0.13) 62.5%,   /* #FFDCF8 */
+    rgba(255, 190, 243, 0.11) 75%,     /* #FFBEF3 */
+    rgba(255, 245, 254, 0.25) 100%     /* #FFF5FE */
+  );
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  
+  /* Border and Shape */
+  border-radius: 24px;
+  border: 1px solid rgba(255, 210, 250, 0.25);
+  
+  /* Enhanced Shadow with New Pink Tones - More Subtle */
+  box-shadow: 
+    0 8px 32px rgba(255, 174, 240, 0.06),
+    0 3px 12px rgba(255, 205, 245, 0.04),
+    inset 0 2px 6px rgba(255, 245, 254, 0.6),
+    inset 0 -2px 6px rgba(255, 220, 248, 0.25),
+    inset 4px 4px 16px rgba(255, 245, 254, 0.35),
+    inset -4px -4px 16px rgba(255, 174, 240, 0.08),
+    inset 0 0 25px rgba(255, 240, 253, 0.2),
+    inset 1px 1px 6px rgba(255, 245, 254, 0.5);
+  
+  /* Smooth Transitions */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(255, 245, 254, 0.12) 0%,
+    rgba(255, 220, 248, 0.06) 30%,
+    transparent 70%
+  );
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  background: radial-gradient(circle at center, 
+    rgba(255, 190, 243, 0.025) 0%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 12px 40px rgba(255, 174, 240, 0.08),
+    0 4px 16px rgba(255, 205, 245, 0.06),
+    inset 0 2px 5px rgba(255, 245, 254, 0.5),
+    inset 0 -2px 5px rgba(255, 220, 248, 0.2),
+    inset 3px 3px 12px rgba(255, 245, 254, 0.3),
+    inset -3px -3px 12px rgba(255, 174, 240, 0.06),
+    inset 0 0 20px rgba(255, 240, 253, 0.15);
+  border-color: rgba(255, 210, 250, 0.35);
+  background: linear-gradient(135deg, 
+    rgba(255, 210, 250, 0.15) 0%,
+    rgba(255, 240, 253, 0.12) 12.5%,
+    rgba(255, 205, 245, 0.18) 25%,
+    rgba(255, 228, 251, 0.15) 37.5%,
+    rgba(255, 174, 240, 0.13) 50%,
+    rgba(255, 220, 248, 0.16) 62.5%,
+    rgba(255, 190, 243, 0.14) 75%,
+    rgba(255, 245, 254, 0.28) 100%
+  );
+}
+
+.container:hover::after {
+  opacity: 1;
+}
+
+.icon {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(150, 80, 130, 0.85); /* צבע טקסט מותאם לגוון הורוד */
+  text-align: center;
+  line-height: 1.4;
+  margin: 0;
+  font-family: "OpenSansR";
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+  .container {
+    width: calc(100vw - 28px); /* מותאם לרוחב החדש */
+    min-width: 300px; /* הגדלה מ-280px */
+    max-width: 400px; /* הגדלה מ-360px */
+    margin: 2% 14px;
+  }
+  
+  .text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    width: calc(100vw - 20px);
+    min-width: 280px; /* הגדלה מ-260px */
+    padding: 18px;
+    margin: 2% 10px;
+  }
+  
+  .text {
+    font-size: 1rem;
+  }
+}

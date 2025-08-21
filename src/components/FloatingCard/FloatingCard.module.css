@@ -1,0 +1,49 @@
+.importantInfo {
+    width: 90%;
+    margin: 3% auto;
+    direction: rtl;
+}
+
+.infoItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+   width:350px;
+    direction: rtl;
+   
+    
+            padding: 15px;
+            
+            /* אנימציה עדינה */
+            transition: all 0.3s ease;
+    text-align: right;
+}
+
+.iconWrapper {
+    background: rgba(255, 190, 217, 0.216);
+    border: 1px solid rgba(165, 127, 114, 0.3);
+    border-radius: 50%;
+    padding: 8px;
+    width:50px;
+    margin-left: 15px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoIcon {
+    color: #A57F72;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.infoText {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.3rem;
+    direction: rtl;
+    text-align: right;
+    color: #442C25;
+    line-height: 1.5;
+}

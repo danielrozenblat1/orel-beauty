@@ -1,0 +1,286 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow-x: hidden;
+}
+  
+.description {
+    font-size: 1.2rem;
+    font-family: "HeeboR";
+    text-align: center;
+    margin: 1% auto;
+    direction: rtl;
+    font-weight: 300;
+    width: 90%;
+    background: linear-gradient(45deg, 
+        #FFD2FA 0%,      /* עדין ורוד-שמנת */
+        #FFF0FD 8%,      /* ורוד שמנת מאוד בהיר */
+        #FFCDF5 16%,     /* ורוד עדין */
+        #FFE4FB 24%,     /* ורוד-לבן עדין */
+        #FFAEF0 32%,     /* ורוד בהיר */
+        #FFDCF8 40%,     /* ורוד שמנת */
+        #FFBEF3 48%,     /* ורוד עדין יותר */
+        #FFF5FE 56%,     /* כמעט לבן עם נגיעת ורוד */
+        #FFACEF 64%,     /* ורוד בהיר */
+        #FFEAFC 72%,     /* ורוד-שמנת עדין */
+        #FFC4F6 80%,     /* ורוד בהיר */
+        #FFF8FF 88%,     /* לבן-ורוד עדין */
+        #FFD2FA 100%     /* חזרה לצבע הבסיס */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+  
+.imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+}
+  
+.backgroundImage {
+    flex: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+  
+.leftImage, .rightImage {
+    display: none;
+}
+  
+.centerImage {
+    background-image: url('../images/אוראל\ ביוטי\ תמונה\ מרכזית.png');
+}
+  
+.contentBox {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 1rem;
+    width: 90%;
+    backdrop-filter: blur(8px);
+    background: #1f191e41;
+    border-radius: 15px;
+    z-index: 1;
+    margin-bottom: 5%;
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.1),
+        inset 0 0 20px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+  
+.title {
+    font-family: 'Berto', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    background: linear-gradient(45deg, 
+        #FFD2FA 0%,      /* עדין ורוד-שמנת */
+        #FFF0FD 8%,      /* ורוד שמנת מאוד בהיר */
+        #FFCDF5 16%,     /* ורוד עדין */
+        #FFE4FB 24%,     /* ורוד-לבן עדין */
+        #FFAEF0 32%,     /* ורוד בהיר */
+        #FFDCF8 40%,     /* ורוד שמנת */
+        #FFBEF3 48%,     /* ורוד עדין יותר */
+        #FFF5FE 56%,     /* כמעט לבן עם נגיעת ורוד */
+        #FFACEF 64%,     /* ורוד בהיר */
+        #FFEAFC 72%,     /* ורוד-שמנת עדין */
+        #FFC4F6 80%,     /* ורוד בהיר */
+        #FFF8FF 88%,     /* לבן-ורוד עדין */
+        #FFD2FA 100%     /* חזרה לצבע הבסיס */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    
+    animation: shimmer 20s infinite linear;
+    background-size: 200% auto;
+    text-shadow: 0 0 30px rgba(255, 210, 250, 0.3);
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.scrollIndicator {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    animation: bounce 2s infinite;
+}
+
+.scrollArrow {
+    color: #FFD2FA;
+    filter: drop-shadow(0 0 10px rgba(255, 210, 250, 0.5));
+    animation: float 3s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateY(-15px);
+        opacity: 1;
+    }
+}
+  
+@media (max-width: 350px) {
+    .contentBox {
+        padding: 0.5rem;
+        width: 90%;
+        bottom: 0%;
+    }
+    .title {
+        font-size: 2.2rem;
+    }
+    .scrollIndicator {
+        margin-top: 1rem;
+    }
+    .scrollArrow {
+        /* Size controlled by Lucide component size prop */
+    }
+}
+  
+@media (min-width: 350px) {
+    .contentBox {
+        padding: 1.5rem 0.7rem;
+        width: 90%;
+        bottom: 9%;
+    }
+    .title {
+        font-size: 2.6rem;
+    }
+    .description{
+                font-size:1.1rem;
+    }
+}
+  
+@media (min-width: 450px) {
+    .contentBox {
+        padding: 1.5rem;
+        width: 85%;
+        bottom: 9%;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+}
+  
+@media (min-width: 550px) {
+    .leftImage {
+        display: block;
+        background-image: url('../images/אוראל\ ביוטי\ תמונה\ שמאל.png');
+    }
+    .rightImage {
+        display: block;
+         background-image: url('../images/אוראל\ ביוטי\ תמונה\ ימין.png');
+    }
+    .contentBox {
+        padding: 1.8rem;
+        width: 80%;
+        bottom: 9%;
+    }
+    .title {
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+    }
+}
+  
+@media (min-width: 650px) {
+    .contentBox {
+        padding: 2rem;
+        width: 75%;
+        bottom: 9%;
+    }
+    .title {
+        font-size: 2.6rem;
+    }
+}
+  
+@media (min-width: 750px) {
+    .contentBox {
+        width: 70%;
+        bottom: 9%;
+    }
+    .title {
+        font-size: 2.8rem;
+    }
+}
+  
+@media (min-width: 850px) {
+    .contentBox {
+        width: 65%;
+        bottom: 9%;
+    }
+}
+  
+@media (min-width: 950px) {
+    .contentBox {
+        width: 60%;
+        bottom: 15%;
+    }
+    .title {
+        font-size: 3rem;
+    }
+}
+  
+@media (min-width: 1050px) {
+    .contentBox {
+        width: 30%;
+        bottom: 20%;
+    }
+}
+  
+@media (min-width: 1150px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .contentBox {
+        width: 33%;
+        bottom: -5%;
+    }
+}
