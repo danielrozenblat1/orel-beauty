@@ -194,11 +194,11 @@ const AboutMe = () => {
       <section ref={containerRef} className={styles.section} id="מי-אני">
         <div className={styles.container}>
           <div className={`${styles.imageWrapper} ${styles.revealItem}`}>
-            <img src={editPhoto} alt="אוראל הרוש" className={styles.image} />
+            <img src={editPhoto} alt="אוראל שושן" className={styles.image} />
           </div>
 
           <div className={`${styles.content} ${styles.revealItem}`}>
-            <h2 className={styles.mainTitle}>נעים להכיר, אוראל הרוש</h2>
+            <h2 className={styles.mainTitle}>נעים להכיר, אוראל שושן</h2>
 
             <div className={styles.quoteContainer}>
               <p className={styles.quote}>
@@ -207,8 +207,8 @@ const AboutMe = () => {
             </div>
 
             <div className={styles.textBlock}>
-              <p className={styles.paragraph}>
-                עשר שנים הייתי לוחמת במג׳׳ב. היה מי שהחליט בשבילי מתי אני קמה, מתי אני אוכלת, ואיך ייראה כל יום שלי. אבל בפנים ידעתי שאני רוצה משהו אחר. רציתי חופש. רציתי לבחור איך ייראה היום שלי, ולדעת שכל מה שיש לי בחיים - הגיע בזכות מה שאני עושה, לא בזכות מערכת שקובעת לי
+     <p className={styles.paragraph}>
+            במשך עשר שנים, שירתתי כלוחמת במג״ב. זו הייתה תקופה מיוחדת ומלמדת, אבל בפנים, הרגשתי שאני רוצה משהו אחר. רציתי למצוא את החופש שלי ולבחור בעצמי איך ייראה היום שלי ולוח הזמנים שלו. רציתי לדעת שההצלחה שלי מגיעה מתוך יצירה אישית שלי..
               </p>
 
               <div className={styles.divider}></div>

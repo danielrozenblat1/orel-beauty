@@ -209,41 +209,50 @@ const CoursesDrawer = () => {
       sessions: [
         {
           number: 1,
-          title: 'תיאוריה בסיסית: יסודות + תרגול חיזוקי ציפורניים',
+          title: 'עיוני בלבד: יסודות + התחלה מקצועית',
           content: [
-            { text: 'מבנה אנטומי של הציפורן והכרת כלים מקצועיים: סכנת פציעות, סטריליזציה וזיהום', icon: <Shield className={styles.contentIcon} /> },
-            { text: 'הכרת לקוחות טיפוסיים בהתמודדות ראשונית עם תסכול, פחדים וטעויות', icon: <UserCheck className={styles.contentIcon} /> },
-            { text: 'הכנת הציפורן לפני מריחת לק – שיוף, חיטוי, הכנת מבנה נכון', icon: <Settings className={styles.contentIcon} /> },
-            { text: 'מריחת בסיס + בונדר + בניית מבנה אנטומי', icon: <Building className={styles.contentIcon} /> },
-            { text: 'מריחת צבע + טופ – שילוב קישוטים ויצירתיות', icon: <Palette className={styles.contentIcon} /> }
+            { text: 'לימוד מעמיק על מבנה העור וסוגי בעיות: כוססת, נשריות, פטריות, שטוחות ועוד', icon: <Shield className={styles.contentIcon} /> },
+            { text: 'היכרות עם מחלות ציפורניים והבדלים חשובים לטיפול בטוח ומקצועי', icon: <UserCheck className={styles.contentIcon} /> },
+            { text: 'היכרות עם כל סוגי הראשים למכשיר שיוף - שימושים לפי צורך', icon: <Settings className={styles.contentIcon} /> },
+            { text: 'סטריליזציה, חיטוי והיגיינה בטיפולים', icon: <Building className={styles.contentIcon} /> },
+                  { text: 'ציוד חובה לעבודה נכונה', icon: <Building className={styles.contentIcon} /> },
+            { text: 'פתיחת עסק פטור - שלבים פרקטיים להתחלה', icon: <Palette className={styles.contentIcon} /> }
           ]
         },
         {
           number: 2,
-          title: 'עיצוב צרפתי + קישוטים גאומטריים (ללא מכחול)',
+          title: 'מניקור יבש + מריחת ג׳ל ללא מבנה אנטומי',
           content: [
-            { text: 'חידוד קווים עם חיזוקי ג\'ל', icon: <PenTool className={styles.contentIcon} /> },
-            { text: 'חידוד הצורה של הציפורן', icon: <Focus className={styles.contentIcon} /> },
-            { text: 'תרגול על מודליסטית', icon: <Activity className={styles.contentIcon} /> }
+            { text: 'עבודה בטוחה עם מכונת שיוף', icon: <PenTool className={styles.contentIcon} /> },
+            { text: 'הסרה נכונה של חומר הג׳ל', icon: <Focus className={styles.contentIcon} /> },
+            { text: 'הכנת הציפורן ללא הג׳ל', icon: <Activity className={styles.contentIcon} /> },
+               { text: 'תרגול מניקור יבש מלא על מודליסטית', icon: <Building className={styles.contentIcon} /> },
+                  { text: 'תרגול מריחה מדוייקת ללא תיקון מבנה', icon: <Building className={styles.contentIcon} /> },
+                     { text: 'התרגול מתבצע על מודליסטית', icon: <Building className={styles.contentIcon} /> },
+            
           ]
         },
         {
           number: 3,
-          title: 'תרגול קווים ומריחת ג\'ל',
+          title: 'התחלת תיקון מבנה אנטומי',
           content: [
-            { text: 'עבודה עם ג\'לים סמיכים שונים', icon: <Brush className={styles.contentIcon} /> },
-            { text: 'חיזוק קווים ומבנה בסיסי', icon: <TrendingUp className={styles.contentIcon} /> },
-            { text: 'תרגול על מודליסטית', icon: <Activity className={styles.contentIcon} /> }
+            { text: 'מהו מניקור אנטומי ולמה הוא חשוב', icon: <Brush className={styles.contentIcon} /> },
+            { text: 'שלבים ראשוניים בבניית מבנה בג׳ל', icon: <TrendingUp className={styles.contentIcon} /> },
+                        { text: 'התאמה לסוגי ציפורניים שונים', icon: <TrendingUp className={styles.contentIcon} /> },
+                                        { text: 'תרגול תיקון מבנה בסיסי', icon: <Activity className={styles.contentIcon} /> },
+            { text: 'תרגול על מודליסטית', icon: <Activity className={styles.contentIcon} /> },
+
           ]
         },
         {
           number: 4,
-          title: 'תיאוריה עסקית – ניהול תהליך עבודה + שיווק וסיום',
+          title: 'תיאוריה עסקית - ניהול תהליך עבודה + שיווק וסיום',
           content: [
-            { text: 'תרגול לק ג\'ל מלא ומריחת ג\'ל בצורה מקצועית', icon: <Wand2 className={styles.contentIcon} /> },
-            { text: 'שילוב פרנץ\', צבע, קישוטים וגימור', icon: <Sparkles className={styles.contentIcon} /> },
-            { text: 'טיפים להתנהלות מול לקוחה', icon: <MessageCircle className={styles.contentIcon} /> },
-            { text: 'תעודות סיום', icon: <Award className={styles.contentIcon} /> },
+            { text: 'תרגול מבנה מלא ומריחת צבע מקצועית', icon: <Wand2 className={styles.contentIcon} /> },
+            { text: 'עיצובי ציפורניים : שקד עיגול ומרובע', icon: <Sparkles className={styles.contentIcon} /> },
+            { text: 'השלמת הציפורן', icon: <MessageCircle className={styles.contentIcon} /> },
+                      { text: 'צילום עבודות בצורה שיווקית', icon: <MessageCircle className={styles.contentIcon} /> },
+            { text: 'חלוקת תעודות', icon: <Award className={styles.contentIcon} /> },
             { text: 'תרגול על מודליסטית', icon: <Activity className={styles.contentIcon} /> }
           ]
         }
@@ -255,29 +264,28 @@ const CoursesDrawer = () => {
       subtitle: 'מפגש אחד | פרונטלי | תרגול על מודליסטית',
       
       sessions: [
-        {
-          number: '01',
-          title: 'תיאוריה מקצועית',
-          content: [
-            { text: 'מבנה הציפורן והבנת האנטומיה - איך לעבוד נכון בלי לגרום לנזקים', icon: <Shield className={styles.contentIcon} /> },
-            { text: 'אבחון סוגי ציפורניים והבנת נקודות תורפה אצל לקוחות', icon: <Brain className={styles.contentIcon} /> },
-            { text: 'שכבות הציפורן הנכונה להחזקה מקסימלית של ג\'ל', icon: <Building className={styles.contentIcon} /> },
-            { text: 'סיבות לפטריות אצל לקוחות ושמירה על סטריליות', icon: <AlertTriangle className={styles.contentIcon} /> },
-            { text: 'סף כאב של לקוחות', icon: <Gauge className={styles.contentIcon} /> },
-            { text: 'ההבדל בין מבנה אנטומי למבנה בנייה ואיך למנוע מהן', icon: <Search className={styles.contentIcon} /> }
-          ]
-        },
-        {
-          number: '01',
-          title: 'עבודה מעשית',
-          content: [
-            { text: 'בניית מבנה אנטומי נכון - ליצירת עבודה עמידה ואסתטית', icon: <Building className={styles.contentIcon} /> },
-            { text: 'מריחה לק ג\'ל מושלמת - ללא נזילות, כולל צבע קרוב לקיוטיקולה', icon: <Brush className={styles.contentIcon} /> },
-            { text: 'שיוף מקצועי - עבודה מהירה ונקייה בלי לפגוע בציפורן הטבעית', icon: <Focus className={styles.contentIcon} /> },
-            { text: 'פתרון תקלות נפוצות: התרוממות, שברים וציפויים שלא מחזיק', icon: <Settings className={styles.contentIcon} /> },
-            { text: 'תרגול מעשי מלא על מודליסטית עם פידבק אישי', icon: <Activity className={styles.contentIcon} /> }
-          ]
-        }
+    {
+      number: '01',
+      title: 'תיאוריה מקצועית',
+      content: [
+        { text: 'מבנה הציפורן והבנת האנטומיה - איך לעבוד נכון בלי לגרום לנזקים', icon: <Shield className={styles.contentIcon} /> },
+        { text: 'אבחון סוגי ציפורניים ובעיות נפוצות אצל לקוחות', icon: <Brain className={styles.contentIcon} /> },
+        { text: 'עקרונות עבודה נכונה להחזקה מקסימלית של הג׳ל', icon: <Building className={styles.contentIcon} /> },
+        { text: 'ניהול זמן נכון מול לקוחות ושמירה על סף סטרס נמוך', icon: <Gauge className={styles.contentIcon} /> },
+        { text: 'טעויות נפוצות במריחה ובבניית מבנה - ואיך להימנע מהן', icon: <Search className={styles.contentIcon} /> }
+      ]
+    },
+    {
+      number: '02',
+      title: 'עבודה מעשית',
+      content: [
+        { text: 'בניית מבנה אנטומי נכון - ליצירת עבודה עמידה ואסתטית', icon: <Building className={styles.contentIcon} /> },
+        { text: 'מריחת לק ג׳ל מושלמת - ללא נזילות, כולל צביעה קרובה לקוטיקולה', icon: <Brush className={styles.contentIcon} /> },
+        { text: 'שיוף מקצועי - עבודה מהירה ונקייה בלי לפגוע בציפורן הטבעית', icon: <Focus className={styles.contentIcon} /> },
+        { text: 'פתרון בעיות נפוצות: התרוממות, שבירה וציפורניים חלשות', icon: <Settings className={styles.contentIcon} /> },
+        { text: 'תרגול מעשי מלא על מודליסטית עם פידבק אישי', icon: <Activity className={styles.contentIcon} /> }
+      ]
+    }
       ]
     },
     {
@@ -287,25 +295,25 @@ const CoursesDrawer = () => {
       sessions: [
         {
           number: 1,
-          title: 'מפגש ראשון עיוני',
+          title: 'מפגש ראשון עיוני + מעשי',
           content: [
-            { text: 'אנטומיה בסיסית – הבנת מבנה כף הרגל', icon: <BookOpen className={styles.contentIcon} /> },
-            { text: 'טווחי בעיות בכף הרגל', icon: <Search className={styles.contentIcon} /> },
-            { text: 'מכשור מקצועי – תיאוריה', icon: <Settings className={styles.contentIcon} /> },
-            { text: 'תיאוריה סטריליזציה – כלי עבודה', icon: <Shield className={styles.contentIcon} /> },
-            { text: 'פתולוגיות שכיחות', icon: <Eye className={styles.contentIcon} /> }
+            { text: 'הכנת העמדה - ציוד, כלים, חיטוי וארגון', icon: <BookOpen className={styles.contentIcon} /> },
+            { text: 'הכנת כף הרגל - השרייה, חיטוי ובחירת החומרים הנכונים', icon: <Search className={styles.contentIcon} /> },
+            { text: 'סידור עור - טיפול בעור קשה/סדקים קלים', icon: <Settings className={styles.contentIcon} /> },
+            { text: 'הכנת הציפורן - מניקור לציפורניי הרגליים , שיוף ונקוי עדין של הקוטיקולה', icon: <Shield className={styles.contentIcon} /> },
+            { text: 'עיסוי קצר לשיפור חווית הלקוחה', icon: <Eye className={styles.contentIcon} /> }
           ]
         },
         {
           number: 2,
-          title: 'תרגול פדיקור קוסמטי מלא (כולל עבודה עם מכשיר)',
+          title: 'מפגש שני - מעשי מתקדם',
           content: [
-            { text: 'תרגול עיוני ויישום של פתולוגיות', icon: <Activity className={styles.contentIcon} /> },
-            { text: 'שיוף עור יבש וקרני (כולל קריות רגליים)', icon: <Scissors className={styles.contentIcon} /> },
-            { text: 'חיטוי והכנת כף הרגל', icon: <Shield className={styles.contentIcon} /> },
-            { text: 'טיפול בציפורניים: גזירה, שיוף, ניקוי קפלים', icon: <PenTool className={styles.contentIcon} /> },
-            { text: 'טיפול בעור: שיוף, פילינג, קרם, מסכה', icon: <Flower2 className={styles.contentIcon} /> },
-            { text: 'תרגול על מודליסטית', icon: <Activity className={styles.contentIcon} /> }
+            { text: 'פתיחה וניקוי מתקדם של הקוטיקולה', icon: <Activity className={styles.contentIcon} /> },
+            { text: 'טיפול מדוייק בעור קשה ועקשן (עקב/כרית כף הרגל)', icon: <Scissors className={styles.contentIcon} /> },
+            { text: 'עור מגורה ואדמומי - מה עושים ומה לא', icon: <Shield className={styles.contentIcon} /> },
+            { text: 'טכניקת מריחה מדוייקת של לק ג׳ל', icon: <PenTool className={styles.contentIcon} /> },
+            { text: 'שימוש באביזרים יעודיים להסרת עור (פצירות מקצועיות , כף פדיקור, חומרים מרככים)', icon: <Flower2 className={styles.contentIcon} /> },
+          
           ]
         }
       ]
@@ -318,30 +326,34 @@ const CoursesDrawer = () => {
         {
           number: 1,
           title: 'תיאוריה מקצועית ותרגול מעשי',
-          content: [
-            { text: 'היכרות עם שיטת הטפסים הפופולרית בג\'ל', icon: <BookOpen className={styles.contentIcon} /> },
-            { text: 'התאמת טופס לגודל הציפורן ובניית מבנה אנטומי', icon: <Target className={styles.contentIcon} /> },
-            { text: 'עבודה עם ג\'לים שונים', icon: <Palette className={styles.contentIcon} /> },
-            { text: 'פתרון תקלות ותיקונים נפוצים', icon: <Settings className={styles.contentIcon} /> },
-            { text: 'הכנה נכונה של הציפורן לבנייה חדשה', icon: <PlayCircle className={styles.contentIcon} /> },
-            { text: 'עבודה בג\'ל בנייה להנחת תשתית', icon: <Building className={styles.contentIcon} /> },
-            { text: 'שיוף מדויק לבניית מבנה אדריכלי לפי תקן', icon: <Focus className={styles.contentIcon} /> },
-            { text: 'עבודה עם תבניות מקצועיות', icon: <FileText className={styles.contentIcon} /> },
-            { text: 'תרגול מבנים כמו: שבר עמוק / שבר קל', icon: <Activity className={styles.contentIcon} /> }
-          ]
+  content: [
+      { text: 'הכרות עם שיטת הטיפסים ההפוכים ככלי תיקון מדויק', icon: <BookOpen className={styles.contentIcon} /> },
+      { text: 'התאמת טיפס לגודל הציפורן ושמירה על צורתה', icon: <Target className={styles.contentIcon} /> },
+      { text: 'יתרונות וחסרונות השיטה מול טכניקות אחרות', icon: <Palette className={styles.contentIcon} /> },
+      { text: 'זיהוי סוגי שברים והתמודדות עם כל אחד', icon: <Settings className={styles.contentIcon} /> },
+      { text: 'מתי בוחרים לתקן ומתי לבנות לבניית ציפורן חדש', icon: <PlayCircle className={styles.contentIcon} /> },
+      { text: 'הכנה נכונה של הציפורן לבנייה חדשה', icon: <Building className={styles.contentIcon} /> },
+      { text: 'בנייה בטיפס והנחה מקצועית', icon: <Focus className={styles.contentIcon} /> },
+      { text: 'עבודה נקייה למניעת התרוממות או נזילות החומר', icon: <FileText className={styles.contentIcon} /> },
+      { text: 'שיוף צורה וגימור הציפורן במבנה אדריכלי לפי תקני עבודה של טכנאית מקצועית', icon: <Activity className={styles.contentIcon} /> },
+      { text: 'תרגול מצבי קצה: שבר עמוק / שבר צידי', icon: <AlertTriangle className={styles.contentIcon} /> }
+    ]
         },
         {
           number: 2,
           title: 'תיאוריה מתקדמת ותרגול מעשי',
-          content: [
-            { text: 'מתי יש צורך בחידוש ולא בבנייה', icon: <Lightbulb className={styles.contentIcon} /> },
-            { text: 'הכנה לבנייה חוזרת, תיקון/השלמת שברים לפני הסרה', icon: <Settings className={styles.contentIcon} /> },
-            { text: 'הסרה נכונה של חומר קיים', icon: <Scissors className={styles.contentIcon} /> },
-            { text: 'בנייה מחדש בטפסים פתוחים – שלב אחרי שלב', icon: <Map className={styles.contentIcon} /> },
-            { text: 'עבודה על 5–10 ציפורניים עם תכנון קו מבנה', icon: <PenTool className={styles.contentIcon} /> },
-            { text: 'שיוף ועיצוב מדויק של הציפורן', icon: <Focus className={styles.contentIcon} /> },
-            { text: 'פתרונות לתקלות נפוצות: שני ציפורניים, קו שבור, נשר / מתקלף / עקום / עובי לא אחיד / קימור שגוי / טיפס לא תואם', icon: <Search className={styles.contentIcon} /> }
-          ]
+      content: [
+  { text: 'מתי יש צורך בחידוש ולא במילוי', icon: <Lightbulb className={styles.contentIcon} /> },
+  { text: 'שילוב נכון של הסרה חלקית/מלאה לפני בנייה חוזרת', icon: <Settings className={styles.contentIcon} /> },
+  { text: 'התאמה של אורך, קימור וצורת ציפורן אחידה', icon: <PenTool className={styles.contentIcon} /> },
+  { text: 'טיפים לעבודה מהירה מבלי לפגוע באיכות', icon: <TrendingUp className={styles.contentIcon} /> },
+  { text: 'שמירה על היגיינה מקצועית בעת העבודה וטיפול בהתרוממויות', icon: <Shield className={styles.contentIcon} /> },
+  { text: 'הסרה נכונה של חומר קיים', icon: <Scissors className={styles.contentIcon} /> },
+  { text: 'בנייה מחדש בטיפסים הפוכים - שלב אחר שלב', icon: <Map className={styles.contentIcon} /> },
+  { text: 'עבודה על 5-10 ציפורניים עם תכנון מבנה', icon: <Focus className={styles.contentIcon} /> },
+  { text: 'שיוף ועיצוב מדויק של הציפורן', icon: <Focus className={styles.contentIcon} /> },
+  { text: 'פתרונות לבעיות נפוצות: שינוי מבנה קיים כגון נשרי / מקפצה / עובי לא אחיד / קימור שגוי / טיפס לא תואם', icon: <Search className={styles.contentIcon} /> }
+]
         }
       ]
     },
@@ -352,27 +364,27 @@ const CoursesDrawer = () => {
       sessions: [
         {
           number: 1,
-          title: 'דיוק, ניקיון וחזרה מקיפה',
+          title: 'דיוק, תיקונים והכנה מתקדמת',
           content: [
-            { text: 'ניהול תהליך עבודה שלם – איך מתחילים ומה סדר הפעולות הנכון', icon: <Map className={styles.contentIcon} /> },
-            { text: 'תרגול חוזר על מבנה אנטומי', icon: <Building className={styles.contentIcon} /> },
-            { text: 'סידור גורם – עיצוב צורה מחדש', icon: <Wand2 className={styles.contentIcon} /> },
-            { text: 'הסרת ג\'ל וניקוי יסודי', icon: <Scissors className={styles.contentIcon} /> },
-            { text: 'תרגול חיזוקי ג\'ל / מבנה אנטומי מדויק', icon: <Focus className={styles.contentIcon} /> },
-            { text: 'בניית פרנץ\' בסיסי – שילוב קווים דקים וקפה', icon: <PenTool className={styles.contentIcon} /> },
-            { text: 'מריחת ג\'ל גאומטרי', icon: <Palette className={styles.contentIcon} /> }
+            { text: 'ניתוח טעויות נפוצות של מתחילות ואיך מתקנים אותן', icon: <Map className={styles.contentIcon} /> },
+            { text: 'עבודה נכונה עם מכונת שיוף', icon: <Building className={styles.contentIcon} /> },
+            { text: 'סידור עור מניקור נקי ולא פולשני', icon: <Wand2 className={styles.contentIcon} /> },
+            { text: 'הכנת הציפורן- ניקוי, קיצור ועיבוד נכון לקליטת החומר', icon: <Scissors className={styles.contentIcon} /> },
+            { text: 'הסרת חומר ישן מבלי לפגוע בציפורן', icon: <Focus className={styles.contentIcon} /> },
+            { text: 'יצירת מבנה אנטומי בסיסי - איזון נכון של גובה צורה ונפח', icon: <PenTool className={styles.contentIcon} /> },
+            { text: 'תרגול מבנה אליפטי', icon: <Palette className={styles.contentIcon} /> }
           ]
         },
         {
           number: 2,
           title: 'תרגול מריחה אומנותית מתקדם',
           content: [
-            { text: 'בניית מריחה אומנותית מדויקת – שייכת ללקוחה ואיפה נכון למקם צבע', icon: <Brush className={styles.contentIcon} /> },
-            { text: 'פתרון תקלות חוזרות בשיוף או בעיות עומק', icon: <Settings className={styles.contentIcon} /> },
-            { text: 'מריחת צבע על ציפורן טבעית לפי גוון עור הלקוחה', icon: <Eye className={styles.contentIcon} /> },
-            { text: 'סידור צבעים קונטרסטיים', icon: <Palette className={styles.contentIcon} /> },
-            { text: 'עבודה לפי קו חיוך', icon: <Heart className={styles.contentIcon} /> },
-            { text: 'תרגול עם לקוחות – סימולציות', icon: <Users className={styles.contentIcon} /> }
+            { text: 'יצירת מבנה אנטומי מדויק - שמירה על סימטריה וגובה נכון', icon: <Brush className={styles.contentIcon} /> },
+            { text: 'שיפור מהירות העבודה ושמירה על רמת גימור גבוהה', icon: <Settings className={styles.contentIcon} /> },
+            { text: 'תרגול עבודה מלאה מההכנה ועד לגימור הסופי על מודליסטית', icon: <Eye className={styles.contentIcon} /> },
+            { text: 'התמודדות עם בעיות : כוססות, ציפורניים נשריות, אי סימטריה', icon: <Palette className={styles.contentIcon} /> },
+            { text: 'טיפים מקצועיים להתנהלות מול לקוחה - שירות, צילום העבודה, תמחור', icon: <Heart className={styles.contentIcon} /> },
+        
           ]
         }
       ]
@@ -380,10 +392,10 @@ const CoursesDrawer = () => {
   ];
 
   const courseIncludes = [
-    'תרגול מעשי על מודליסטיות לאורך כל הקורס',
+  'תרגול מעשי לאורך הקורס',
     'תעודת השתתפות יוקרתית בסיום הקורס',
     'ליווי מקצועי גם לאחר הקורס לשאלות והתייעצות',
-    'דגש על דיוק, ניקיון, מהירות ואסתטיקה',
+    'דגש על דיוק, ניקיון מהירות ואסתטיקה',
     'מענה על טעויות נפוצות ושיפור ביטחון בעבודה'
   ];
 
