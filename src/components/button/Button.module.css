@@ -18,7 +18,7 @@
 }
 
 .button {
-  font-family: 'AssistantR';
+  font-family: 'Assistant';
   font-size: 1.15rem;
   width: 300px;
   color: rgba(60, 60, 60, 0.95);
@@ -54,15 +54,15 @@
   padding: 2px;
   background: linear-gradient(45deg, 
     #E8B4CB 0%,      /* Rose Quartz */
-    #F5E6F0 10%,     /* Pale Pink */
+    #fcd7f0 10%,     /* Pale Pink */
     #D4A5C2 20%,     /* Dusty Rose */
     #F0D9E8 30%,     /* Soft Rose */
     #C295B8 40%,     /* Mauve Rose */
-    #EDD1E3 50%,     /* Cream Pink */
+    #ffd8f1 50%,     /* Cream Pink */
     #D98BB8 60%,     /* Pink Blush */
     #F2E0ED 70%,     /* Powder Pink */
     #B885A9 80%,     /* Deep Rose */
-    #F7EDF3 90%,     /* Ivory Pink */
+    #ffe3f4 90%,     /* Ivory Pink */
     #E8B4CB 100%     /* Rose Quartz */
   );
   border-radius: inherit;
